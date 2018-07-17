@@ -267,7 +267,7 @@ height:42.5vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count">132</span> / Reading time: <span class="post-count">1 min</span></span>
+                        <span>Word count: <span class="post-count">296</span> / Reading time: <span class="post-count">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -403,9 +403,28 @@ height:42.5vh;
 <li>语法分析：识别句子中的各个短语，例如名词短语、动词短语等，从而获得句子的结构。</li>
 <li><p>语义分析：划分句子成分，例如哪个是谓语、主语等，确定与核心谓语之间的关系。</p>
 <p><img src="/look/2018/06/29/编译原理/img02.jpg" alt=""></p>
+<h2 id="语言及其文法"><a href="#语言及其文法" class="headerlink" title="语言及其文法"></a>语言及其文法</h2><h3 id="字母表运算"><a href="#字母表运算" class="headerlink" title="字母表运算"></a>字母表运算</h3></li>
+<li><p>字母表∑1和∑2的乘积( product)</p>
 </li>
+<li>字母表∑的n次幂( power)</li>
 </ul>
-
+<blockquote>
+<p>字母表的n次幂：长度为n的符号串构成的集合</p>
+</blockquote>
+<ul>
+<li>字母表∑的正闭包( positive closure)</li>
+</ul>
+<blockquote>
+<p>字母表的正闭包：长度正数的符号串构成的集合</p>
+</blockquote>
+<ul>
+<li>字母表∑的克林闭包(Kleene closure)</li>
+</ul>
+<blockquote>
+<p>字母表的克林闭包：任意符号串（长度可以为零）构成的集合</p>
+</blockquote>
+<h3 id="句子的构成规则"><a href="#句子的构成规则" class="headerlink" title="句子的构成规则"></a>句子的构成规则</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt; 句子 &gt; → &lt; 名词短语 &gt; &lt; 动词短语 &gt;</span><br><span class="line">&lt; 名词短语&gt; → &lt; 形容词 &gt; &lt; 名词短语 &gt;</span><br><span class="line">&lt; 名词短语 &gt; → &lt; 名词 &gt; </span><br><span class="line">&lt; 动词短语 &gt; → &lt; 动词 &gt; &lt; 名词短语 &gt;</span><br></pre></td></tr></table></figure>
+<h3 id="文法分类"><a href="#文法分类" class="headerlink" title="文法分类"></a>文法分类</h3>
     </article>
     <!-- license  -->
     
@@ -419,6 +438,11 @@ height:42.5vh;
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/look/2018/07/04/TypeScript入门/" title= TypeScript入门 >
+                    <div class="nextTitle">TypeScript入门</div>
+                </a>
             
         </li>
         <li class="previous">
@@ -527,7 +551,7 @@ top:42.5vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是编译"><span class="toc-number">1.</span> <span class="toc-text">什么是编译</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编译步骤"><span class="toc-number">2.</span> <span class="toc-text">编译步骤</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是编译"><span class="toc-number">1.</span> <span class="toc-text">什么是编译</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编译步骤"><span class="toc-number">2.</span> <span class="toc-text">编译步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#语言及其文法"><span class="toc-number">3.</span> <span class="toc-text">语言及其文法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#字母表运算"><span class="toc-number">3.1.</span> <span class="toc-text">字母表运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#句子的构成规则"><span class="toc-number">3.2.</span> <span class="toc-text">句子的构成规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文法分类"><span class="toc-number">3.3.</span> <span class="toc-text">文法分类</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -558,9 +582,18 @@ top:42.5vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 2
+        Total : 3
         </div>
         <!-- search  -->
         
@@ -573,6 +606,11 @@ top:42.5vh;
     
     <div class="archive-year"> 2018 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/04</span><a class="archive-post-title" href= "/look/2018/07/04/TypeScript入门/" >TypeScript入门</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -590,6 +628,8 @@ top:42.5vh;
     <div class="sidebar-tags-name">
     
         <span class="sidebar-tag-name" data-tags="MOOC"><span class="iconfont-archer">&#xe606;</span>MOOC</span>
+    
+        <span class="sidebar-tag-name" data-tags="ES6"><span class="iconfont-archer">&#xe606;</span>ES6</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>

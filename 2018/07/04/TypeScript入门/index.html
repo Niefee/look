@@ -267,7 +267,7 @@ height:42.5vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count">284</span> / Reading time: <span class="post-count">1 min</span></span>
+                        <span>Word count: <span class="post-count">290</span> / Reading time: <span class="post-count">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -408,7 +408,7 @@ height:42.5vh;
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> list: <span class="built_in">Array</span>&lt;number&gt; = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br></pre></td></tr></table></figure>
 <h3 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h3><p>元组类型可以表示一个已知元素的数量与类型的数组。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x: [string, number];</span><br><span class="line">x = [<span class="string">'hello'</span>, <span class="number">10</span>]; <span class="comment">// OK</span></span><br><span class="line">x = [<span class="number">10</span>, <span class="string">'hello'</span>]; <span class="comment">// Error</span></span><br></pre></td></tr></table></figure>
-<h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p><code>enum</code>类型是对JavaScript标准数据类型的一个补充。<br>枚举可以通过编号与名称互换。</p>
+<h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p><code>enum</code>类型是对JavaScript标准数据类型的一个补充。<br>枚举可以通过编号与名称互换，即(name -&gt; value）和（value -&gt; name）。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">enum Color &#123;Red = <span class="number">1</span>, Green, Blue&#125;</span><br><span class="line"><span class="keyword">let</span> c: Color = Color.Green;</span><br><span class="line"><span class="built_in">console</span>.log(c); <span class="comment">// 2</span></span><br><span class="line"></span><br><span class="line">enum Color &#123;Red = <span class="number">1</span>, Green, Blue&#125;</span><br><span class="line"><span class="keyword">let</span> colorName: string = Color[<span class="number">2</span>];</span><br><span class="line"><span class="built_in">console</span>.log(colorName); <span class="comment">// Green</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>默认从<code>0</code>开始。</p>
@@ -427,6 +427,11 @@ height:42.5vh;
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/look/2018/07/19/Vuex/" title= Vuex >
+                    <div class="nextTitle">Vuex</div>
+                </a>
             
         </li>
         <li class="previous">
@@ -575,9 +580,18 @@ top:42.5vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 3
+        Total : 4
         </div>
         <!-- search  -->
         
@@ -590,6 +604,11 @@ top:42.5vh;
     
     <div class="archive-year"> 2018 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/19</span><a class="archive-post-title" href= "/look/2018/07/19/Vuex/" >Vuex</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -611,9 +630,11 @@ top:42.5vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="MOOC"><span class="iconfont-archer">&#xe606;</span>MOOC</span>
+        <span class="sidebar-tag-name" data-tags="vue"><span class="iconfont-archer">&#xe606;</span>vue</span>
     
         <span class="sidebar-tag-name" data-tags="ES6"><span class="iconfont-archer">&#xe606;</span>ES6</span>
+    
+        <span class="sidebar-tag-name" data-tags="MOOC"><span class="iconfont-archer">&#xe606;</span>MOOC</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>

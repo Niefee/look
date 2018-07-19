@@ -339,74 +339,33 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/look/2018/06/29/编译原理/" >
+        <a class="abstract-title" href = "/look/2018/07/19/Vuex/" >
             
-                <span>编译原理</span>
+                <span>Vuex</span>
         </a>
         <div class="abstract-content">
-            什么是编译编译：就是将高级语言（源语言）翻译成汇编语言或者机器语言（目标语言）的过程。
+            基本概念Vuex是Vue.js的应用中的状态管理方案。
+有四个核心概念：
 
-编译步骤
-词法分析：确定句子中各个单词的词性，例如名词、代词、介词等； 
-语法分析：识别句子中的各个短语，例如名词短语、动词短语等，从而获得句子的结构。
-语义分析：划分句子成分，例如哪个是谓语、主语等，确定与核心谓语之间的关系。
+State：状态数据，可以全局引入后调用。
+Getter：对state进行过滤、处理或计算，而派生出新的状态数据。
+Mutation： 更改store中的state唯一方法是提交mutation。
+Action：类似与mutation，但不直接更改state，提交mutation，由它去更改state。原因是mutation不能异步更改state，但可通过action操作。
 
-语言及其文法字母表运算
-字母表∑1和∑2的乘积( product)
-
-字母表∑的n次幂( power)
-
-
-字母表的n次幂：长度为n的符号串构成的集合
-
-
-字母表∑的正闭包( positive closure)
-
-
-字母表的正闭包：长度正数的符号串构成的集合
-
-
-字母表...
+多文件结构123456// state.jsexport default &#123;    title: 'index page',  ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/06/29</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/07/19</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "MOOC">MOOC</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "vue">vue</a>
     
 </div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/look/2018/06/29/hello-world/" >
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/06/29</span>
-            </div>
-            <!-- tags  -->
             
         </div>
     </article>

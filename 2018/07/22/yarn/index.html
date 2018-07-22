@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Niefee&#39;s Studio</title>
+    <title>yarn · Niefee&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -70,6 +70,8 @@
 
     <link rel="preload" href= /look/css/style.css?v=20180630 as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= /look/css/mobile.css?v=20180630 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -194,12 +196,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/look/" >Niefee&#39;s Studio</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">yarn</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/look/>Niefee's Studio</a>
 </header>
@@ -213,24 +226,74 @@
 
 
 
+height:42.5vh;
+
 >
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/look/)"></div>
+    <div class="site-intro-img" style="background-image: url(/look/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            yarn
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "ES6">ES6</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count">454</span> / Reading time: <span class="post-count">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2018/07/22</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -331,61 +394,188 @@
 </script>        
         <img class="loading" src="/look/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/look/2018/06/29/编译原理/" >
-            
-                <span>编译原理</span>
-        </a>
-        <div class="abstract-content">
-            什么是编译编译：就是将高级语言（源语言）翻译成汇编语言或者机器语言（目标语言）的过程。
+            <main class="main post-page">
+    <article class="article-entry">
+        <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Mac用户建议使用<code>brew</code>安装。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install yarn</span><br></pre></td></tr></table></figure>
+<h2 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h2><p>功能相同，语法不同：</p>
+<table>
+<thead>
+<tr>
+<th>Npm</th>
+<th>Yarn</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>npm install(npm i)</td>
+<td>yarn install(yarn)</td>
+<td>根据 package.json 安装所有依赖</td>
+</tr>
+<tr>
+<td>npm i –save [package]</td>
+<td>yarn add [package]</td>
+<td>添加依赖包</td>
+</tr>
+<tr>
+<td>npm i –save-dev [package]</td>
+<td>yarn add [package] –dev</td>
+<td>添加依赖包至 devDependencies</td>
+</tr>
+<tr>
+<td>npm i -g [package]</td>
+<td>yarn global add [package]</td>
+<td>进行全局安装依赖包</td>
+</tr>
+<tr>
+<td>npm update –save</td>
+<td>yarn upgrade [package]</td>
+<td>升级依赖包</td>
+</tr>
+<tr>
+<td>npm uninstall [package]</td>
+<td>yarn remove [package]</td>
+<td>移除依赖包</td>
+</tr>
+</tbody>
+</table>
+<p>相同含义：</p>
+<table>
+<thead>
+<tr>
+<th>Npm</th>
+<th>Yarn</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>npm run</td>
+<td>yarn run</td>
+<td>运行 package.json 中预定义的脚本</td>
+</tr>
+<tr>
+<td>npm config list</td>
+<td>yarn config list</td>
+<td>查看配置信息</td>
+</tr>
+<tr>
+<td>npm config set registry 仓库地址</td>
+<td>yarn config set registry 仓库地址</td>
+<td>更换仓库地址</td>
+</tr>
+<tr>
+<td>npm init</td>
+<td>yarn init</td>
+<td>互动式创建/更新 package.json 文件</td>
+</tr>
+<tr>
+<td>npm list</td>
+<td>yarn list</td>
+<td>查看当前目录下已安装的node包</td>
+</tr>
+<tr>
+<td>npm login</td>
+<td>yarn login</td>
+<td>保存你的用户名、邮箱</td>
+</tr>
+<tr>
+<td>npm logout</td>
+<td>yarn logout</td>
+<td>删除你的用户名、邮箱</td>
+</tr>
+<tr>
+<td>npm outdated</td>
+<td>yarn outdated</td>
+<td>检查过时的依赖包</td>
+</tr>
+<tr>
+<td>npm link</td>
+<td>yarn link</td>
+<td>开发时链接依赖包，以便在其他项目中使用</td>
+</tr>
+<tr>
+<td>npm unlink</td>
+<td>yarn unlink</td>
+<td>取消链接依赖包</td>
+</tr>
+<tr>
+<td>npm publish</td>
+<td>yarn publish</td>
+<td>将包发布到 npm</td>
+</tr>
+<tr>
+<td>npm test</td>
+<td>yarn test</td>
+<td>测试 = yarn run test</td>
+</tr>
+<tr>
+<td>npm bin</td>
+<td>yarn bin</td>
+<td>显示 bin 文件所在的安装目录</td>
+</tr>
+<tr>
+<td>yarn info</td>
+<td>yarn info</td>
+<td>显示一个包的信息</td>
+</tr>
+</tbody>
+</table>
+<h2 id="单独命令"><a href="#单独命令" class="headerlink" title="单独命令"></a>单独命令</h2><h3 id="Npm"><a href="#Npm" class="headerlink" title="Npm"></a>Npm</h3><ul>
+<li>npm rebuild</li>
+</ul>
+<p>用户更改<code>node</code>版本后，重新编译当中的二进制文件。例如<code>Sass（Scss)</code>，通过<code>npm rebuild node-sass</code>重新编译当中的二进制文件。</p>
+<h3 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h3><ul>
+<li>yarn import：依据原npm安装后的node_modules目录生成一份yarn.lock文件；</li>
+<li>yarn licenses：列出已安装包的许可证信息；</li>
+<li>yarn pack：创建一个压缩的包依赖 gzip 档案；</li>
+<li>yarn why：显示有关一个包为何被安装的信息。</li>
+<li>yarn autoclean：从包依赖里清除并移除不需要的文件。</li>
+</ul>
+<blockquote>
+<p>参考:<br><a href="https://jeffjade.com/2017/12/30/135-npm-vs-yarn-detial-memo/" target="_blank" rel="noopener">https://jeffjade.com/2017/12/30/135-npm-vs-yarn-detial-memo/</a><br><a href="https://yarnpkg.com/zh-Hans/docs/cli/" target="_blank" rel="noopener">https://yarnpkg.com/zh-Hans/docs/cli/</a></p>
+</blockquote>
 
-编译步骤
-词法分析：确定句子中各个单词的词性，例如名词、代词、介词等； 
-语法分析：识别句子中的各个短语，例如名词短语、动词短语等，从而获得句子的结构。
-语义分析：划分句子成分，例如哪个是谓语、主语等，确定与核心谓语之间的关系。
-
-语言及其文法字母表运算
-字母表∑1和∑2的乘积( product)
-
-字母表∑的n次幂( power)
-
-
-字母表的n次幂：长度为n的符号串构成的集合
-
-
-字母表∑的正闭包( positive closure)
-
-
-字母表的正闭包：长度正数的符号串构成的集合
-
-
-字母表...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/06/29</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "MOOC">MOOC</a>
-    
-</div>
-            
-        </div>
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="https://niefee.github.io/look">Niefee sll</a>
+            <p>原文链接: <a href="https://niefee.github.io/look/2018/07/22/yarn/">https://niefee.github.io/look/2018/07/22/yarn/</a>
+            <p>发表日期: <a href="https://niefee.github.io/look/2018/07/22/yarn/">July 22nd 2018, 10:50:16 am</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/look/2018/07/19/Vuex/" title= Vuex >
+                    <div class="prevTitle">Vuex</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!--PC和WAP自适应版-->
+
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -452,6 +642,24 @@
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:42.5vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作命令"><span class="toc-number">2.</span> <span class="toc-text">操作命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#单独命令"><span class="toc-number">3.</span> <span class="toc-text">单独命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Npm"><span class="toc-number">3.1.</span> <span class="toc-text">Npm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Yarn"><span class="toc-number">3.2.</span> <span class="toc-text">Yarn</span></a></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
